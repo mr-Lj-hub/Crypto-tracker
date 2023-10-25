@@ -89,7 +89,7 @@ const CoinPage = () => {
             {coins:watchlist?[...watchlist,coin?.id]:[coin?.id]});
             setAlert({
               open:true,
-              message: `${coin.name} Added to the watchlist !`,
+              message: `${coin.name} Added to the Basket !`,
               type: "success",
             });
         } catch (error) {
@@ -112,7 +112,7 @@ const CoinPage = () => {
             ); 
             setAlert({
               open:true,
-              message: `${coin.name} Removed from the watchlist !`,
+              message: `${coin.name} Removed from the Basket !`,
               type: "success",
             });
         } catch (error) {
@@ -210,7 +210,7 @@ const CoinPage = () => {
               onClick={inWatchlist? removeFromWatchlist:addToWatchlist}
              
             >
-              {inWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
+              {inWatchlist ? "Remove from Basket" : "Add to Basket"}
             </Button>
           )}
 

@@ -162,7 +162,7 @@ const removeFromWatchlist = async (coin) => {
             </span>
             <div className={classes.watchlist}>
                 <span style={{ fontsize:15, textshadow: "0 0 5px black"}}>
-                    watchlist
+                    BASKET
                 </span>
                 {coins.map(coin =>{
                   if(watchlist.includes(coin.id))
